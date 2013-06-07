@@ -45,7 +45,8 @@ class ImpressRenderer < Redcarpet::Render::HTML
           MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
         </script>
         <script type="text/javascript"
-          src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+          src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+#          src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
         </script>
       }
     end
@@ -56,6 +57,7 @@ class ImpressRenderer < Redcarpet::Render::HTML
 <html>
   <head>
     #{@@title}
+
     <link href="css/reset.css" rel="stylesheet" />
     #{@@author}
     <meta charset="utf-8" />
@@ -92,4 +94,3 @@ class ImpressRenderer < Redcarpet::Render::HTML
     }
   end
 end
-
